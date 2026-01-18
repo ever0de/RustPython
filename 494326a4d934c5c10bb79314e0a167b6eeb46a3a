@@ -1,0 +1,31 @@
+Lib/test/test_sqlite3/test_dump.py
+  5acc075dde0021a5 60,178,200,216
+Lib/test/test_sqlite3/test_userfunctions.py
+  5acc075dde0021a5 173,258,267,275,309,388,398,431,517,522,535,547,579,652,657,673,682,691,757,806,812,823
+Lib/test/test_sqlite3/test_hooks.py
+  5acc075dde0021a5 210,224,328,353,360
+Lib/test/test_sqlite3/test_dbapi.py
+  5acc075dde0021a5 530,555,569,576,878,1091,1100,1129,1765,1769,1773,1777,1781,1787,1798,1804,1810,1933,2045
+Lib/test/test_sqlite3/test_transactions.py
+  5acc075dde0021a5 34,391,399,415,442,476,496,506
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.34",
+  "base_commit_sha": "494326a4d934c5c10bb79314e0a167b6eeb46a3a",
+  "prompts": {
+    "5acc075dde0021a5": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "44401464-321b-431d-b4e0-3f2ee3923031",
+        "model": "copilot/claude-sonnet-4.5"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+      "messages": [],
+      "total_additions": 70,
+      "total_deletions": 12,
+      "accepted_lines": 58,
+      "overriden_lines": 0
+    }
+  }
+}
