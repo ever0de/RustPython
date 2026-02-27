@@ -1,0 +1,25 @@
+crates/vm/src/stdlib/io.rs
+  6d69069cd8a28ea6 4599-4606
+extra_tests/snippets/stdlib_io_bytesio.py
+  6d69069cd8a28ea6 77-100,108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.5",
+  "base_commit_sha": "0d85e0fcc8a4995e13887ab8d6f6e23a79c04dd3",
+  "prompts": {
+    "6d69069cd8a28ea6": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "6b2b8be3-961c-4834-bbcd-a0ecf16db1d6",
+        "model": "copilot/claude-sonnet-4.6"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+      "messages": [],
+      "total_additions": 34,
+      "total_deletions": 0,
+      "accepted_lines": 34,
+      "overriden_lines": 0
+    }
+  }
+}
