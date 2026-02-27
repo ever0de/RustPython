@@ -1,0 +1,23 @@
+extra_tests/snippets/stdlib_io.py
+  034c03576be2e935 2,43-59
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.5",
+  "base_commit_sha": "7b320a09c95461728f5c9ad043a7f1a94f8ed50f",
+  "prompts": {
+    "034c03576be2e935": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "c1cd7b98-1111-4ea9-9ca5-cb59a89f8c24",
+        "model": "unknown"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+      "messages": [],
+      "total_additions": 18,
+      "total_deletions": 1,
+      "accepted_lines": 18,
+      "overriden_lines": 0
+    }
+  }
+}
