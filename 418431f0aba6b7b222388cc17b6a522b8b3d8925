@@ -1,0 +1,23 @@
+extra_tests/snippets/stdlib_io_isatty.py
+  fa3ac1b18e1858a2 1-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.5",
+  "base_commit_sha": "418431f0aba6b7b222388cc17b6a522b8b3d8925",
+  "prompts": {
+    "fa3ac1b18e1858a2": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "9c304685-dcfb-4409-95c9-527b34b5253c",
+        "model": "copilot/claude-sonnet-4.6"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+      "messages": [],
+      "total_additions": 29,
+      "total_deletions": 0,
+      "accepted_lines": 29,
+      "overriden_lines": 0
+    }
+  }
+}
