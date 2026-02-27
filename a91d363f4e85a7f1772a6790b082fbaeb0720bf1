@@ -1,0 +1,23 @@
+crates/vm/src/stdlib/io.rs
+  cedc1ff4c8f78f7d 438
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.5",
+  "base_commit_sha": "a91d363f4e85a7f1772a6790b082fbaeb0720bf1",
+  "prompts": {
+    "cedc1ff4c8f78f7d": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "56d62958-1698-4840-856a-a0b284fea1fe",
+        "model": "unknown"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
