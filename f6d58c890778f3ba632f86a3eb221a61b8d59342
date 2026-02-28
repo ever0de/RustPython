@@ -1,0 +1,23 @@
+crates/vm/src/stdlib/io.rs
+  9ed6ae835e60a9cd 3796-3802
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.6",
+  "base_commit_sha": "f6d58c890778f3ba632f86a3eb221a61b8d59342",
+  "prompts": {
+    "9ed6ae835e60a9cd": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "bf599b02-d74c-4a91-ab5b-f2f1f5e17378",
+        "model": "copilot/claude-opus-4.6"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+      "messages": [],
+      "total_additions": 9,
+      "total_deletions": 3,
+      "accepted_lines": 7,
+      "overriden_lines": 0
+    }
+  }
+}
