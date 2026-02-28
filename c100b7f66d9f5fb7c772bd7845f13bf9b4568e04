@@ -1,0 +1,38 @@
+crates/stdlib/src/hashlib.rs
+  9ed6ae835e60a9cd 726-727,729-741,744
+crates/stdlib/Cargo.toml
+  9ed6ae835e60a9cd 72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.6",
+  "base_commit_sha": "c100b7f66d9f5fb7c772bd7845f13bf9b4568e04",
+  "prompts": {
+    "9ed6ae835e60a9cd": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "bf599b02-d74c-4a91-ab5b-f2f1f5e17378",
+        "model": "copilot/claude-opus-4.6"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+      "messages": [],
+      "total_additions": 17,
+      "total_deletions": 20,
+      "accepted_lines": 17,
+      "overriden_lines": 0
+    },
+    "d9e3bfa3dfe24ead": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "5d1917f0-7a89-427b-b0d1-b6c7a81aa842",
+        "model": "copilot/claude-opus-4.6"
+      },
+      "human_author": null,
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 2,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
