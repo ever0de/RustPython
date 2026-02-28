@@ -1,0 +1,23 @@
+crates/vm/src/stdlib/thread.rs
+  9ed6ae835e60a9cd 1099-1109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.6",
+  "base_commit_sha": "6f8ad6fc455fc11daaba8ae43ed4982bfbb47261",
+  "prompts": {
+    "9ed6ae835e60a9cd": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "bf599b02-d74c-4a91-ab5b-f2f1f5e17378",
+        "model": "copilot/claude-sonnet-4.6"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+      "messages": [],
+      "total_additions": 11,
+      "total_deletions": 1,
+      "accepted_lines": 11,
+      "overriden_lines": 0
+    }
+  }
+}
