@@ -1,0 +1,32 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.11",
+  "base_commit_sha": "eb18e92994a9c446816cf394a429cbf7c7420fc7",
+  "prompts": {
+    "b2ba126c5bf6d089": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "5a961cb2-5425-4cc2-80ca-31c6c8b38a9a",
+        "model": "copilot/claude-sonnet-4.6"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>",
+      "messages": [
+        {
+          "type": "user",
+          "text": "대략 한시간내에 해결할 수 있는 이슈들을 찾아보고 있습니다. \nsubagent들로 파이썬 테스트중에 expected failure 데코레이터가 달린것들에서 우선적으로 찾아보고 \n각 테스트 단일 방법을 알아보고 실제로 실패하는지 확인 후, 테스트 실행 방법과 이슈에 대한 내용과 수정 방향성에 대해 이슈를 만들어주세요. 한국어버전으로\nGC나 pickle류의 내용은 불가능할것으로 예상되기때문에 제외하고 리서치합니다.\n\n최소 10개 이상 찾아보고 문서를 작성해주세요.",
+          "timestamp": "2026-03-03T06:49:26.227+00:00"
+        },
+        {
+          "type": "assistant",
+          "text": "에 **총 15개 이슈**를 정리했습니다. (GC/pickle 제외)\n\n---\n\n## 주요 이슈 요약\n\n| 분류 | 이슈 수 | 대표 이슈 |\n|------|---------|-----------|\n| **코루틴** | 3개 | `cr_suspended` 미구현, 완료된 코루틴 재사용 RuntimeError 미발생, `async for` 오류 메시지 |\n| **f-string** | 3개 | AST col_offset 오차, `#` 주석 미지원, 중첩 깊이 제한 |\n| **함수 속성** | 2개 | `__defaults__` 삭제/조작, closure cell 비교 연산 |\n| **예외 처리** | 2개 | `BlockingIOError.characters_written`, property getter 내 AttributeError 마스킹 |\n| **컨텍스트** | 1개 | `contextmanager` traceback 프레임 불일치 |\n| **기타** | 4개 | PEP 401 barry_as_FLUFL, comprehension f_locals, list 서브클래스 키워드 인자, classmethod+bound method |\n\n### 1시간 안에 수정 가능성이 높은 이슈 (난이도 쉬움)\n\n1. **이슈 1**: `cr_suspended` 속성 — `coroutine.rs`에 `#[pyproperty]` 한 줄 추가 패턴\n2. **이슈 3**: `async for` 오류 메시지 — 문자열만 변경하면 됨\n3. **이슈 10**: closure cell 비교 연산 — `__lt__`, `__eq__` 등 구현\n4. **이슈 11**: `BlockingIOError.characters_written` — `exceptions.rs`에 필드 추가\n5. **이슈 15**: `classmethod` + bound method — `classmethod.rs` `__get__` 로직 수정\n\n각 이슈는 **테스트 실행 명령어**, **현재 동작 vs 기대 동작**, **수정 파일 및 방향성**을 포함하고 있습니다.",
+          "timestamp": "2026-03-03T06:55:44.736+00:00"
+        }
+      ],
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 492,
+      "overriden_lines": 0
+    }
+  }
+}
