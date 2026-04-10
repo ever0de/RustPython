@@ -1,0 +1,23 @@
+crates/vm/src/builtins/function.rs
+  30f7be02da05e5d3 5-6,791-801,810,818-822,831-835,1318-1322
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "5836313e0acc7f10b4c6118f39a23b989bde9161",
+  "prompts": {
+    "30f7be02da05e5d3": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "116d94b9-7f4e-459d-8d10-f48020d85dec",
+        "model": "copilot/claude-sonnet-4.6"
+      },
+      "human_author": "Jiseok CHOI",
+      "messages": [],
+      "total_additions": 32,
+      "total_deletions": 14,
+      "accepted_lines": 29,
+      "overriden_lines": 0
+    }
+  }
+}
