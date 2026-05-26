@@ -1,0 +1,9 @@
+crates/stdlib/src/_sqlite3.rs
+  ai_agent 47,2560-2563,2571-2577,2581-2583
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "ac57ee6fa3e8dd513e4bb091a2b0527a49aabac3",
+  "prompts": {}
+}
