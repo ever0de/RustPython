@@ -1,0 +1,19 @@
+extra_tests/snippets/stdlib_sqlite.py
+  s_5660b89ede2aee::t_f75048c5839b52 61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "c074556a20a594341e2df7f704e9e92fc6a5fb8d",
+  "prompts": {},
+  "sessions": {
+    "s_5660b89ede2aee": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "e14468e4-88a8-4673-809f-8e7564dae12c",
+        "model": "gpt-5-mini"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>"
+    }
+  }
+}
