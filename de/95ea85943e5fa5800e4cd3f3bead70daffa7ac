@@ -1,0 +1,21 @@
+crates/stdlib/src/_sqlite3.rs
+  s_3a22172d6e6637::t_f132a418877368 3206-3216
+.cspell.json
+  s_3a22172d6e6637::t_90acdcf8cb849d 86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "de95ea85943e5fa5800e4cd3f3bead70daffa7ac",
+  "prompts": {},
+  "sessions": {
+    "s_3a22172d6e6637": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "14616504-6533-4283-9994-fbf17f794da7",
+        "model": "gpt-5-mini"
+      },
+      "human_author": null
+    }
+  }
+}
