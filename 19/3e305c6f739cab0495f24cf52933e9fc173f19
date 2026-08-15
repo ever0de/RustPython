@@ -1,0 +1,19 @@
+crates/stdlib/src/_sqlite3.rs
+  s_3a22172d6e6637::t_1b81c7ad80f88f 590-593,3486-3495
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "193e305c6f739cab0495f24cf52933e9fc173f19",
+  "prompts": {},
+  "sessions": {
+    "s_3a22172d6e6637": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "14616504-6533-4283-9994-fbf17f794da7",
+        "model": "copilot/claude-sonnet-4.6"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>"
+    }
+  }
+}
