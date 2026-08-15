@@ -1,0 +1,14 @@
+crates/stdlib/src/_sqlite3.rs
+  h_ab7c7c71b0532d 2801-2805,2808
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "96ac49cbbe8f7779239be1bb4ee3dc2a5f4bb927",
+  "prompts": {},
+  "humans": {
+    "h_ab7c7c71b0532d": {
+      "author": "Jiseok CHOI <jiseok.dev@gmail.com>"
+    }
+  }
+}
