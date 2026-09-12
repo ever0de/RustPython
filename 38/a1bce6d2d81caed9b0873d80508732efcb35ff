@@ -1,0 +1,21 @@
+crates/stdlib/src/_sqlite3.rs
+  s_06479cdfc0921f::t_4451576c02b056 1517-1518
+  s_06479cdfc0921f::t_931d0820af7d28 1516
+  s_06479cdfc0921f::t_dc5b22fd711ee7 65,408-413,1520-1524
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "38a1bce6d2d81caed9b0873d80508732efcb35ff",
+  "prompts": {},
+  "sessions": {
+    "s_06479cdfc0921f": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "f07a73ed-6d62-47a5-8c9f-124ee1cc1de2",
+        "model": "copilot/gpt-5.6-luna"
+      },
+      "human_author": null
+    }
+  }
+}
