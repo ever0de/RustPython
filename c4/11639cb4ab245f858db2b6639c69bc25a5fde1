@@ -1,0 +1,59 @@
+docs/sqlite3-expected-failure-report.md
+  s_06479cdfc0921f::t_418f37f8cf1ab1 1,6-8,14-17,21,23-28
+  s_06479cdfc0921f::t_195aaf91c5ea6e 11,20,22,206,208
+  s_06479cdfc0921f::t_2e046d7bf459fa 3-4
+  s_06479cdfc0921f::t_70471a494b6f9d 51,134
+  s_06479cdfc0921f::t_af9cd5466d1cf4 129-132,136,138,140
+  s_06479cdfc0921f::t_a7e3ce1fe5d55c 30,141-205,207,209-222
+  s_06479cdfc0921f::t_237b1e7b80d8c1 133,135,137,139,226-241
+  s_06479cdfc0921f::t_01d95463bce28b 46,48-50,54,60-62,66-70,72-82,88,91-96,103,105,107
+  s_06479cdfc0921f::t_57a746d5682fe5 19,52-53,55-59,83-87,98-99,104,106,108-110,125-127
+  s_06479cdfc0921f::t_e37fd5c57007cc 100
+  s_06479cdfc0921f::t_da91d249a05097 10,12,36,120,252-285
+  s_06479cdfc0921f::t_59807765dee37b 124,223-225,243-251
+  s_06479cdfc0921f::t_c6db85bcd2b3da 40-45,47,63-65,71,89-90,97,101-102
+  s_06479cdfc0921f::t_b5c081bac4a00c 2
+  s_06479cdfc0921f::t_3d856e47d0d573 5
+  s_06479cdfc0921f::t_7a73d94d244cfa 9
+  s_06479cdfc0921f::t_4e1ca9047c0872 13
+  s_06479cdfc0921f::t_0eab34fb3bc37b 18
+  s_06479cdfc0921f::t_f751cd37fb6f71 29
+  s_06479cdfc0921f::t_bc74f92202a1a0 31-35
+  s_06479cdfc0921f::t_76df9ab34777a0 37-39
+  s_06479cdfc0921f::t_783f29af930fb2 111-113,117-119
+  s_06479cdfc0921f::t_2e9561caa2607c 121-123
+  s_06479cdfc0921f::t_025d0b2ed6a19c 128
+  s_06479cdfc0921f::t_215f07a07b171b 242
+  s_06479cdfc0921f::t_73df8f4555b21b 114-116
+docs/sqlite3-expected-failures.md
+  s_06479cdfc0921f::t_8e927511e527f8 35
+  s_06479cdfc0921f::t_e0d3c7af842164 87-88,90-92,94-95,97-99,101-102
+  s_06479cdfc0921f::t_ffc266d6dc151a 16,18,165-191
+  s_06479cdfc0921f::t_71c3b17f4b930c 78-86,89,93,96,100,103-163
+  s_06479cdfc0921f::t_a7e3ce1fe5d55c 36
+  s_06479cdfc0921f::t_3259184546cd60 13-15
+  s_06479cdfc0921f::t_8161cc1d497644 17
+  s_06479cdfc0921f::t_cf172fc2241dfd 19-21,32-34
+  s_06479cdfc0921f::t_4f0aba3917081e 37-39,75-77
+  s_06479cdfc0921f::t_4eaac26be09414 164
+  s_06479cdfc0921f::t_2434a41a6562bf 192-194
+  s_06479cdfc0921f::t_26c938dbd26010 1-12,22-31,40-74,195-202
+crates/stdlib/src/_sqlite3.rs
+  s_06479cdfc0921f::t_d6fa1d91e7fd6a 1523
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "c411639cb4ab245f858db2b6639c69bc25a5fde1",
+  "prompts": {},
+  "sessions": {
+    "s_06479cdfc0921f": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "f07a73ed-6d62-47a5-8c9f-124ee1cc1de2",
+        "model": "copilot/gpt-5.6-luna"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>"
+    }
+  }
+}
