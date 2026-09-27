@@ -1,0 +1,19 @@
+crates/stdlib/src/_sqlite3.rs
+  s_06479cdfc0921f::t_cd0e814adb7286 2383-2385
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3c85a71e7b12f21379c7d852ffc656d99fdb189b",
+  "prompts": {},
+  "sessions": {
+    "s_06479cdfc0921f": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "f07a73ed-6d62-47a5-8c9f-124ee1cc1de2",
+        "model": "copilot/gpt-5.6-terra"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>"
+    }
+  }
+}
