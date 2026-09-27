@@ -1,0 +1,19 @@
+crates/stdlib/src/_sqlite3.rs
+  s_06479cdfc0921f::t_3ba41e06339a2e 65-66,359,368-369,382,388-409,743-744,1057
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "5cb33e977bdbe886f97e86101c7700f53051ffda",
+  "prompts": {},
+  "sessions": {
+    "s_06479cdfc0921f": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "f07a73ed-6d62-47a5-8c9f-124ee1cc1de2",
+        "model": "unknown"
+      },
+      "human_author": "Jiseok CHOI <jiseok.dev@gmail.com>"
+    }
+  }
+}
