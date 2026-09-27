@@ -723,7 +723,6 @@ class OpenTests(unittest.TestCase):
             self.assertTrue(os.path.exists(path))
             cx.execute(self._sql)
 
-    @unittest.expectedFailure  # TODO: RUSTPYTHON
     def test_factory_database_arg(self):
         def factory(database, *args, **kwargs):
             nonlocal database_arg

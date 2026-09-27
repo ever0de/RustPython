@@ -62,8 +62,8 @@ mod _sqlite3 {
         },
         convert::IntoObject,
         function::{
-            ArgCallable, ArgIterable, FsPath, FuncArgs, KwArgs, OptionalArg, PyComparisonValue,
-            PySetterValue, TimeoutSeconds,
+            ArgCallable, ArgIterable, FromArgs, FsPath, FuncArgs, KwArgs, OptionalArg,
+            PyComparisonValue, PySetterValue, TimeoutSeconds,
         },
         object::{Traverse, TraverseFn},
         protocol::{
@@ -356,7 +356,7 @@ mod _sqlite3 {
     #[derive(FromArgs)]
     struct ConnectArgs {
         #[pyarg(any)]
-        database: FsPath,
+        database: PyObjectRef,
         #[pyarg(any, default = TimeoutSeconds::new(5.0))]
         timeout: TimeoutSeconds,
         #[pyarg(any, default = 0)]
@@ -365,8 +365,8 @@ mod _sqlite3 {
         isolation_level: IsolationLevelArg,
         #[pyarg(any, default = true)]
         check_same_thread: bool,
-        #[pyarg(any, default = Connection::class(&vm.ctx).to_owned(), py_default = "ConnectionType")]
-        factory: PyTypeRef,
+        #[pyarg(any, default = Connection::class(&vm.ctx).to_owned().into(), py_default = "ConnectionType")]
+        factory: PyObjectRef,
         // TODO: cache statements
         #[allow(dead_code)]
         #[pyarg(any, default = 0)]
@@ -379,8 +379,31 @@ mod _sqlite3 {
 
     unsafe impl Traverse for ConnectArgs {
         fn traverse(&self, tracer_fn: &mut TraverseFn<'_>) {
+            self.database.traverse(tracer_fn);
             self.isolation_level.0.traverse(tracer_fn);
             self.factory.traverse(tracer_fn);
+        }
+    }
+
+    struct ConnectArgsWithOriginal {
+        parsed: ConnectArgs,
+        original: FuncArgs,
+    }
+
+    impl FromArgs for ConnectArgsWithOriginal {
+        fn arity() -> core::ops::RangeInclusive<usize> {
+            ConnectArgs::arity()
+        }
+
+        const PARAMS: Option<&'static [rustpython_vm::function::Param]> = ConnectArgs::PARAMS;
+
+        fn from_args(
+            vm: &VirtualMachine,
+            args: &mut FuncArgs,
+        ) -> Result<Self, rustpython_vm::function::ArgumentError> {
+            let original = args.clone();
+            let parsed = ConnectArgs::from_args(vm, args)?;
+            Ok(Self { parsed, original })
         }
     }
 
@@ -717,10 +740,8 @@ mod _sqlite3 {
     }
 
     #[pyfunction]
-    fn connect(args: ConnectArgs, vm: &VirtualMachine) -> PyResult {
-        let factory = args.factory.clone();
-        let conn = Connection::py_new(&factory, args, vm)?;
-        conn.into_ref_with_type(vm, factory).map(Into::into)
+    fn connect(args: ConnectArgsWithOriginal, vm: &VirtualMachine) -> PyResult {
+        args.parsed.factory.call(args.original, vm)
     }
 
     #[pyfunction]
@@ -1033,7 +1054,7 @@ mod _sqlite3 {
         }
 
         fn initialize_db(args: &ConnectArgs, vm: &VirtualMachine) -> PyResult<Sqlite> {
-            let path = args.database.to_cstring(vm)?;
+            let path = FsPath::try_from_object(vm, args.database.clone())?.to_cstring(vm)?;
             let db = Sqlite::from(SqliteRaw::open(path.as_ptr(), args.uri, vm)?);
             let timeout = (args.timeout.to_secs_f64() * 1000.0) as c_int;
             db.busy_timeout(timeout);
